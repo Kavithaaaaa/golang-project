@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: abhishekf5/go-web-app
+  repository: kavithamoorthi1616/golang-project
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1"
