@@ -24,7 +24,7 @@ jobs:
     - name: Set up Go 1.22
       uses: actions/setup-go@v2
       with:
-        go-version: 1.22
+        go-version: latest
 
     - name: Build
       run: go build -o go-web-app
@@ -42,7 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.56.2
+        version: latest
   
   push:
     runs-on: ubuntu-latest
@@ -89,7 +89,7 @@ jobs:
       run: |
         git config --global user.email "kavithamoorthi0207@gmail.com"
         git config --global user.name "Kavithaaaaa"
-        git add helm/go-web-app-chart/values.yaml
+        git add helm/golang-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
 
